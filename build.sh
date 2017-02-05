@@ -3,7 +3,7 @@ if which pdflatex
 then
     DOCNAME=HonorsProspectus
     TEXMAINFILE=main.tex
-    PASSES=2
+    PASSES=1
     OUTPUT_DIR=output
     mkdir -p ${OUTPUT_DIR}
     for ((i=0; i<${PASSES}; i++))
@@ -15,5 +15,5 @@ then
         fi
     done
 else
-    echo "pdflatex compiler not supported machine. Install pdflatex to build document"
+    echo "pdflatex compiler not supported on machine. Install pdflatex to build document."
 fi
