@@ -2,7 +2,14 @@
 \usepackage{indentfirst}
 \usepackage{tabularx}
 \usepackage{parskip}
+\usepackage{xcolor, soul}% For rob's comments
+
 \setlength{\parindent}{15pt}
+
+\colorlet{lighterblue}{blue!15}
+\colorlet{lightergreen}{green!20}
+\newcommand{\rob}[1]{\sethlcolor{lighterblue}\hl{[RL: #1]}}% rob comments
+\newcommand{\ste}[1]{\sethlcolor{lightergreen}\hl{[ST: #1]}} % stephen comments
 
 \title{Designing embedded control mechanisms to enable dynamically variable spatiotemporal resolution during vision capture sequences.}
 \author{
